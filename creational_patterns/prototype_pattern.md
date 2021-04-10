@@ -29,7 +29,9 @@
    - 实现抽象原型类的 clone() 方法，它是可被复制的对象。
  - 访问类/原型管理器（Prototype Manager）
    - 把产品存储在一个 Hashtable 中，并在请求的时候返回它们的克隆。
-   
+
+<img src="./img/prototype_pattern.png" height="300px"/>
+
 ## 实现
 
 ### Example 1
