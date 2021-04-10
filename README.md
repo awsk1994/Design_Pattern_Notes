@@ -3,6 +3,7 @@
  - 创建型模式 (Creational Pattern)
    - [单例模式（Singleton Pattern）](./creational_patterns/singleton_pattern.md)
    - [工厂模式（Factory Pattern）](./creational_patterns/factory_pattern.md)
+   - [原型模式（Prototype Pattern)](./creational_patterns/prototype_pattern.md)
 
  - 行为模式（Behavioral Pattern）
 
