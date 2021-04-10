@@ -30,7 +30,7 @@
  - 访问类/原型管理器（Prototype Manager）
    - 把产品存储在一个 Hashtable 中，并在请求的时候返回它们的克隆。
 
-<img src="./img/prototype_pattern.png" height="300px"/>
+<img src="./img/prototype_pattern_diagram.png" height="300px"/>
 
 ## 实现
 
