@@ -1,3 +1,9 @@
+# 优先读：
+ - 修饰，策略，代理
+ - 命令，观察，迭代，模板方法
+
+ - DONE: 适配
+
 # 设计模式笔记（Design Patterns Notes）
 
  - 创建型模式 (Creational Pattern)
@@ -7,8 +13,10 @@
    - [原型模式（Prototype Pattern)](./creational_patterns/prototype_pattern.md)
 
  - 行为模式（Behavioral Pattern）
+  - 
 
  - 结构型模式（Structural Pattern）
+  - [适配器模式（Adapter Pattern)](./structural_patterns/adapter_pattern.md)
 
 ## Introduction
 ### 设计模式是什么？
