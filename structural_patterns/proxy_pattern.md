@@ -13,10 +13,18 @@
   - <img src="./img/proxy_pattern_1.png"/>
   - 这有什么好处呢？ 如果需要在类的**主要业务逻辑前后执行一些工作**， 你无需修改类就能完成这项工作。 由于代理实现的接口与原类相同， 因此你可将其传递给任何一个使用实际服务对象的客户端。
 
+- 现实例子：
+  - AOP
+  - 买火车票不一定在火车站买，也可以去代售点
+  - 去医院挂号很麻烦怎么办？找黄牛帮我们挂号
+
 - 优点
   1. 职责清晰
   2. 高扩展性
-  3. 智能化。
+  3. 智能化
+  4. 开闭原则。 你可以在不对服务或客户端做出修改的情况下创建新代理。
+  5. 如果客户端对服务对象的生命周期没有特殊要求， 你可以对生命周期进行管理。
+  6. 即使服务对象还未准备好或不存在， 代理也可以正常工作。
 
 - 缺点
   1. 由于在客户端和真实主题之间增加了代理对象，因此有些类型的代理模式可能会造成请求的处理速度变慢。
@@ -104,6 +112,45 @@ public class Main {
         // 受委托程序员大V让Java3y发文章，大V(自己)来点赞
         programmer.coding();
     }  
+}
+```
+
+## 透明代理(普通代理)
+- 如果程序员大V只做Java3y的生意，可以改成：
+
+```java
+public class ProgrammerBigV implements Programmer {
+    // 指定程序员大V要给Java3y点赞
+    private Java3y java3y ;
+
+    // 只做Java3y的生意了
+    public ProgrammerBigV() {
+        this.java3y = new Java3y(); // 直接new Java3y
+    }
+
+    // 程序员大V点赞评论收藏转发
+    public void upvote() {
+        System.out.println("程序员大V点赞评论收藏转发！");
+    }
+
+    @Override
+    public void coding() {
+        // 让Java3y发文章了
+        java3y.coding();
+        // 程序员大V点赞评论收藏转发！
+        upvote();
+    }
+}
+```
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // 受委托程序员大V（不用创建Java3y，然后输入进ProgrammerBigV）
+        Programmer programmer = new ProgrammerBigV();
+        // 受委托程序员大V让Java3y发文章，大V来点赞
+        programmer.coding();
+    }
 }
 ```
 
