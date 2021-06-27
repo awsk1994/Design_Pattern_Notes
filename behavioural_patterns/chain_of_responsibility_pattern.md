@@ -1,5 +1,8 @@
 # 责任链模式（Chain of Responsibility Pattern）
 
+Notes: emphasis on hierarchy. Interesting note is levels of debug is a hierarchy structure - if not pass, if not todo, if not warn then it is error --> hence, a hierarchy.
+Need to modify 个人想法：责任链设计模式 VS if-else section to reflect this
+
 - 定义：
   - 为请求创建了一个**接收者对象的链**
   - 通常每个接收者都包含对另一个接收者的引用。如果一个对象不能处理该请求，那么它会**把相同的请求传给下一个接收者**，依此类推
@@ -216,6 +219,9 @@ execute() => {
     nextHandler.execute(data)    
 }
 ```
+
+# TODO
+- https://betterprogramming.pub/chain-of-responsibility-to-the-rescue-2288471c783b
 
 # Sources
 - https://www.runoob.com/design-pattern/chain-of-responsibility-pattern.html
