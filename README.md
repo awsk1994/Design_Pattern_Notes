@@ -12,7 +12,8 @@
 
 - 行为模式（Behavioral Pattern）
   - [命令模式（Command Pattern)](./behavioural_patterns/command_pattern.md)
-   - [责任链模式（Chain of Responsibility Pattern）](./behavioural_patterns/chain_of_responsibility_pattern.md)
+  - [责任链模式（Chain of Responsibility Pattern）](./behavioural_patterns/chain_of_responsibility_pattern.md)
+  - [策略模式（Strategy Pattern）](./behavioural_patterns/strategy_pattern.md)
 
 - 结构型模式（Structural Pattern）
   - [适配器模式（Adapter Pattern)](./structural_patterns/adapter_pattern.md)
