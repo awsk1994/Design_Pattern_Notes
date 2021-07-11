@@ -20,6 +20,7 @@
   - [适配器模式（Adapter Pattern)](./structural_patterns/adapter_pattern.md)
   - [修饰器模式（Decorator Pattern)](./structural_patterns/decorator_pattern.md)
   - [代理模式（Proxy Pattern)](./structural_patterns/proxy_pattern.md)
+  - [桥接模式（Bridge Pattern）](./structural_patterns/bridge_pattern.md)
 
 ## Introduction
 
