@@ -78,8 +78,9 @@ class AudioPlayer is
         // ...
     method rewind(time) is
         // ...
+```
 
-
+```
 // 所有具体状态类都必须实现状态基类声明的方法，并提供反向引用指向与状态相
 // 关的上下文对象。状态可使用反向引用将上下文转换为另一个状态。
 abstract class State is
@@ -94,8 +95,9 @@ abstract class State is
     abstract method clickPlay()
     abstract method clickNext()
     abstract method clickPrevious()
+```
 
-
+```
 // 具体状态会实现与上下文状态相关的多种行为。
 class LockedState extends State is
 
